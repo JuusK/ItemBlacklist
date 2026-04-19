@@ -1,0 +1,21 @@
+name: ItemBlacklist
+version: '1.0'
+main: me.juusk.itemblacklist.ItemBlacklist
+api-version: '1.21'
+authors: [ JuusK ]
+description: Allows blacklisting certain items
+
+commands:
+  itemblacklist:
+    description: Manage the item blacklist.
+    usage: /itemblacklist <add|remove|list> [id]
+    permission: itemblacklist.manage
+    aliases: [ibl]
+
+permissions:
+  itemblacklist.manage:
+    description: Allows managing the item blacklist
+    default: op
+  itemblacklist.bypass:
+    description: Items are not removed from this player's inventory
+    default: false
