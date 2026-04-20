@@ -13,7 +13,6 @@ public final class ItemBlacklist extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
 
         blacklistManager = new BlacklistManager(this);
         blacklistManager.load();
